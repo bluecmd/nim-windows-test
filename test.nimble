@@ -5,7 +5,7 @@ author        = "Christian Svensson"
 description   = "A new awesome nimble package"
 license       = "Proprietary"
 srcDir        = "src"
-bin           = @["test"]
+bin           = @["hello"]
 
 
 # Dependencies
