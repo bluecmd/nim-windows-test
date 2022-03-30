@@ -15,3 +15,8 @@ Sign using signtool.exe:
 ```
 signtool sign /a test.exe
 ```
+or PowerShell:
+```powershell
+$cert=Get-ChildItem -Path Cert:\CurrentUser\My -CodeSigningCert
+Set-AuthenticodeSignature -FilePath test.exe -Certificate $cert
+```
